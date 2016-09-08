@@ -1,0 +1,23 @@
+
+<div>
+    <h2>{{::ctrl.title}}</h2>
+    <div class="row">
+        <ul  class="collection">
+            <li ng-repeat="movie in ctrl.movies">
+
+                <p>
+
+                    <a href="#/movies/{{movie.id}}" class="secondary-content"> <img ng-src="{{movie.poster}}"/></a>
+
+                </p>
+
+            </li>
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+

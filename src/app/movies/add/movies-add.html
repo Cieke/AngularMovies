@@ -1,0 +1,22 @@
+
+
+<h2>Add a movie to your collection</h2>
+
+<div class="row">
+    <form class="col s12" name="addForm" novalidate ng-submit="ctrl.addMovie()">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="movie_name" name="movie_name" ng-model="ctrl.newMovie.movieName" required
+                       ng-minlength="2" type="text"/>
+                <label for="movie_name">Movie Name</label>
+            </div>
+        </div>
+
+
+
+        <button ng-disabled="addForm.$invalid" ng-class="{'disabled': addForm.$invalid}"
+                class="btn btn-waves-effect" type="submit">
+            Search <i class="material-icons">send</i>
+        </button>
+    </form>
+</div>
